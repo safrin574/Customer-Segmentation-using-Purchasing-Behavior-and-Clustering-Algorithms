@@ -1,0 +1,311 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {"customer_segmentation_dataset.csv":false};
+        var gk_fileData = {"customer_segmentation_dataset.csv":"CustomerID,Frequency,MonetaryValue,ProductCategory,ProductCategoryEncoded,Recency\nCUST0001,12,73.76,Electronics,0,256\nCUST0002,6,548.9,Books,1,139\nCUST0003,11,241.02,Groceries,2,312\nCUST0004,14,354.22,Clothing,3,149\nCUST0005,7,265.17,Electronics,0,99\nCUST0006,8,74.76,Clothing,3,76\nCUST0007,9,53.49,Beauty,4,282\nCUST0008,11,175.92,Beauty,4,109\nCUST0009,8,188.38,Books,1,188\nCUST0010,10,188.28,Beauty,4,199\nCUST0011,7,192.74,Beauty,4,303\nCUST0012,11,906.35,Groceries,2,327\nCUST0013,11,507.29,Groceries,2,154\nCUST0014,8,299.15,Groceries,2,40\nCUST0015,12,236.39,Beauty,4,133\nCUST0016,6,242.86,Books,1,132\nCUST0017,7,420.41,Sports,5,279\nCUST0018,8,234.69,Sports,5,362\nCUST0019,10,472.74,Clothing,3,84\nCUST0020,5,323.28,Sports,5,242\nCUST0021,3,911.67,Sports,5,116\nCUST0022,9,223.93,Groceries,2,109\nCUST0023,13,531.86,Groceries,2,221\nCUST0024,8,97.85,Beauty,4,41\nCUST0025,6,147.62,Clothing,3,147\nCUST0026,13,834.0,Electronics,0,112\nCUST0027,12,459.17,Clothing,3,103\nCUST0028,13,358.8,Clothing,3,46\nCUST0029,9,1063.98,Books,1,324\nCUST0030,14,239.01,Beauty,4,271\nCUST0031,8,531.01,Books,1,195\nCUST0032,8,557.52,Clothing,3,280\nCUST0033,12,718.47,Clothing,3,283\nCUST0034,15,87.23,Clothing,3,40\nCUST0035,13,237.78,Sports,5,189\nCUST0036,13,319.22,Books,1,164\nCUST0037,10,710.78,Clothing,3,24\nCUST0038,8,348.51,Groceries,2,24\nCUST0039,15,558.32,Beauty,4,4\nCUST0040,9,79.66,Beauty,4,323\nCUST0041,7,196.69,Groceries,2,290\nCUST0042,8,622.24,Beauty,4,181\nCUST0043,13,217.96,Sports,5,248\nCUST0044,15,253.03,Sports,5,116\nCUST0045,8,703.34,Electronics,0,279\nCUST0046,7,119.24,Electronics,0,69\nCUST0047,9,145.56,Electronics,0,351\nCUST0048,6,71.35,Beauty,4,254\nCUST0049,16,721.84,Sports,5,181\nCUST0050,10,500.97,Sports,5,318\nCUST0051,18,492.38,Sports,5,169\nCUST0052,10,192.22,Groceries,2,313\nCUST0053,8,65.91,Sports,5,249\nCUST0054,11,47.57,Groceries,2,188\nCUST0055,3,625.29,Electronics,0,54\nCUST0056,15,375.87,Electronics,0,326\nCUST0057,6,427.65,Beauty,4,357\nCUST0058,7,308.5,Electronics,0,313\nCUST0059,9,130.57,Beauty,4,138\nCUST0060,11,199.49,Clothing,3,168\nCUST0061,8,103.27,Clothing,3,103\nCUST0062,12,91.4,Books,1,85\nCUST0063,10,473.33,Beauty,4,317\nCUST0064,11,52.53,Books,1,212\nCUST0065,12,103.93,Books,1,3\nCUST0066,16,208.97,Clothing,3,179\nCUST0067,8,270.97,Beauty,4,342\nCUST0068,7,70.43,Clothing,3,303\nCUST0069,13,345.37,Books,1,332\nCUST0070,10,295.92,Beauty,4,38\nCUST0071,15,618.13,Books,1,239\nCUST0072,8,274.44,Sports,5,169\nCUST0073,11,370.66,Beauty,4,343\nCUST0074,11,137.21,Beauty,4,314\nCUST0075,5,142.35,Books,1,306\nCUST0076,10,78.2,Sports,5,30\nCUST0077,11,138.39,Groceries,2,190\nCUST0078,12,197.12,Clothing,3,357\nCUST0079,8,577.83,Books,1,25\nCUST0080,11,120.62,Beauty,4,112\nCUST0081,11,937.97,Clothing,3,206\nCUST0082,5,393.91,Clothing,3,185\nCUST0083,8,339.0,Clothing,3,47\nCUST0084,13,258.58,Groceries,2,228\nCUST0085,11,222.6,Electronics,0,39\nCUST0086,7,156.84,Books,1,16\nCUST0087,8,67.5,Electronics,0,22\nCUST0088,11,124.43,Electronics,0,213\nCUST0089,15,720.7,Electronics,0,310\nCUST0090,8,377.16,Clothing,3,149\nCUST0091,14,716.5,Sports,5,241\nCUST0092,6,153.43,Clothing,3,272\nCUST0093,16,100.48,Clothing,3,59\nCUST0094,11,256.66,Beauty,4,287\nCUST0095,6,128.57,Beauty,4,202\nCUST0096,14,298.06,Electronics,0,32\nCUST0097,12,53.53,Clothing,3,162\nCUST0098,9,28.56,Electronics,0,255\nCUST0099,10,329.66,Beauty,4,254\nCUST0100,13,733.9,Sports,5,9\nCUST0101,15,340.24,Books,1,139\nCUST0102,9,374.45,Electronics,0,10\nCUST0103,11,265.01,Sports,5,214\nCUST0104,10,284.25,Books,1,273\nCUST0105,8,64.01,Groceries,2,324\nCUST0106,1,132.9,Electronics,0,48\nCUST0107,13,573.89,Electronics,0,111\nCUST0108,6,193.6,Groceries,2,153\nCUST0109,13,566.18,Groceries,2,123\nCUST0110,11,278.46,Electronics,0,357\nCUST0111,10,289.06,Groceries,2,102\nCUST0112,10,194.79,Clothing,3,241\nCUST0113,13,413.72,Books,1,321\nCUST0114,9,484.8,Books,1,191\nCUST0115,9,126.59,Books,1,217\nCUST0116,6,70.66,Clothing,3,51\nCUST0117,10,36.36,Groceries,2,292\nCUST0118,12,361.84,Sports,5,81\nCUST0119,17,333.05,Groceries,2,88\nCUST0120,10,1110.2,Electronics,0,194\nCUST0121,9,266.18,Beauty,4,104\nCUST0122,9,231.33,Books,1,271\nCUST0123,3,305.44,Groceries,2,96\nCUST0124,10,317.61,Sports,5,198\nCUST0125,10,217.63,Electronics,0,1\nCUST0126,6,130.35,Clothing,3,167\nCUST0127,9,255.5,Clothing,3,126\nCUST0128,11,248.24,Sports,5,313\nCUST0129,9,245.18,Electronics,0,81\nCUST0130,10,444.15,Books,1,251\nCUST0131,11,252.01,Groceries,2,169\nCUST0132,16,72.29,Electronics,0,73\nCUST0133,9,149.57,Clothing,3,141\nCUST0134,10,215.51,Sports,5,70\nCUST0135,16,261.13,Sports,5,262\nCUST0136,7,367.24,Groceries,2,340\nCUST0137,5,262.69,Sports,5,308\nCUST0138,5,29.4,Sports,5,245\nCUST0139,4,81.29,Electronics,0,3\nCUST0140,14,385.1,Books,1,337\nCUST0141,13,210.9,Groceries,2,63\nCUST0142,8,279.91,Electronics,0,49\nCUST0143,12,190.24,Books,1,76\nCUST0144,9,149.04,Electronics,0,175\nCUST0145,14,195.88,Beauty,4,109\nCUST0146,12,282.4,Electronics,0,183\nCUST0147,10,250.59,Sports,5,192\nCUST0148,9,482.65,Books,1,65\nCUST0149,15,58.61,Groceries,2,337\nCUST0150,17,67.73,Groceries,2,271\nCUST0151,11,208.95,Books,1,100\nCUST0152,8,370.2,Sports,5,32\nCUST0153,5,427.71,Clothing,3,352\nCUST0154,9,154.15,Electronics,0,128\nCUST0155,8,9.07,Sports,5,339\nCUST0156,6,158.44,Beauty,4,43\nCUST0157,11,333.81,Books,1,78\nCUST0158,5,247.05,Electronics,0,314\nCUST0159,12,379.79,Groceries,2,289\nCUST0160,9,560.68,Clothing,3,270\nCUST0161,9,220.54,Beauty,4,162\nCUST0162,13,173.61,Groceries,2,189\nCUST0163,9,114.82,Books,1,247\nCUST0164,5,67.33,Electronics,0,216\nCUST0165,3,49.64,Books,1,315\nCUST0166,12,141.53,Electronics,0,339\nCUST0167,18,510.29,Sports,5,168\nCUST0168,8,405.6,Clothing,3,339\nCUST0169,11,166.92,Sports,5,193\nCUST0170,9,943.67,Sports,5,283\nCUST0171,3,150.09,Books,1,336\nCUST0172,10,596.3,Clothing,3,13\nCUST0173,8,690.69,Electronics,0,240\nCUST0174,10,350.07,Electronics,0,320\nCUST0175,11,140.39,Beauty,4,147\nCUST0176,12,185.72,Groceries,2,204\nCUST0177,8,287.5,Beauty,4,80\nCUST0178,12,69.35,Beauty,4,43\nCUST0179,11,105.1,Electronics,0,89\nCUST0180,3,97.13,Books,1,148\nCUST0181,9,368.99,Sports,5,95\nCUST0182,11,557.08,Sports,5,151\nCUST0183,14,416.67,Sports,5,2\nCUST0184,9,496.74,Clothing,3,22\nCUST0185,14,130.22,Electronics,0,313\nCUST0186,9,192.57,Books,1,328\nCUST0187,17,204.5,Clothing,3,7\nCUST0188,7,349.08,Groceries,2,206\nCUST0189,11,144.94,Books,1,114\nCUST0190,10,476.16,Beauty,4,272\nCUST0191,10,678.16,Books,1,83\nCUST0192,10,361.8,Books,1,179\nCUST0193,14,185.78,Sports,5,210\nCUST0194,6,120.16,Books,1,328\nCUST0195,13,97.35,Beauty,4,124\nCUST0196,12,29.83,Beauty,4,113\nCUST0197,6,209.56,Electronics,0,12\nCUST0198,8,200.14,Books,1,126\nCUST0199,9,456.39,Sports,5,53\nCUST0200,15,153.23,Books,1,331\nCUST0201,10,219.01,Groceries,2,283\nCUST0202,9,308.81,Groceries,2,140\nCUST0203,10,357.64,Sports,5,97\nCUST0204,10,421.02,Electronics,0,5\nCUST0205,11,286.72,Electronics,0,57\nCUST0206,4,73.57,Beauty,4,334\nCUST0207,6,335.66,Beauty,4,69\nCUST0208,6,143.89,Clothing,3,118\nCUST0209,7,574.63,Sports,5,59\nCUST0210,15,254.14,Books,1,33\nCUST0211,12,299.58,Sports,5,318\nCUST0212,7,1168.03,Clothing,3,50\nCUST0213,6,426.1,Beauty,4,19\nCUST0214,6,331.31,Sports,5,214\nCUST0215,6,224.14,Sports,5,197\nCUST0216,7,79.96,Beauty,4,47\nCUST0217,10,211.67,Clothing,3,167\nCUST0218,11,118.82,Beauty,4,289\nCUST0219,4,732.84,Electronics,0,141\nCUST0220,7,334.48,Books,1,84\nCUST0221,9,560.7,Beauty,4,182\nCUST0222,11,149.53,Clothing,3,79\nCUST0223,10,126.73,Groceries,2,215\nCUST0224,10,397.72,Electronics,0,14\nCUST0225,5,114.51,Groceries,2,215\nCUST0226,10,174.49,Beauty,4,128\nCUST0227,8,755.71,Electronics,0,310\nCUST0228,7,180.32,Books,1,248\nCUST0229,6,63.64,Beauty,4,29\nCUST0230,11,40.55,Books,1,280\nCUST0231,13,55.66,Sports,5,338\nCUST0232,5,582.87,Groceries,2,319\nCUST0233,11,157.64,Electronics,0,202\nCUST0234,9,1144.66,Books,1,361\nCUST0235,8,683.31,Clothing,3,57\nCUST0236,11,874.44,Books,1,218\nCUST0237,11,505.37,Clothing,3,62\nCUST0238,5,383.19,Beauty,4,157\nCUST0239,7,122.67,Electronics,0,202\nCUST0240,7,249.35,Books,1,17\nCUST0241,5,410.56,Books,1,322\nCUST0242,13,484.38,Electronics,0,6\nCUST0243,6,87.68,Books,1,58\nCUST0244,16,214.34,Clothing,3,325\nCUST0245,11,234.33,Books,1,318\nCUST0246,13,227.16,Groceries,2,169\nCUST0247,8,99.49,Beauty,4,82\nCUST0248,10,808.35,Sports,5,219\nCUST0249,8,208.66,Clothing,3,177\nCUST0250,6,106.43,Groceries,2,204\nCUST0251,10,821.34,Beauty,4,71\nCUST0252,8,683.74,Electronics,0,266\nCUST0253,8,278.29,Clothing,3,98\nCUST0254,7,170.18,Sports,5,345\nCUST0255,13,50.89,Beauty,4,291\nCUST0256,10,363.23,Sports,5,208\nCUST0257,6,160.38,Electronics,0,2\nCUST0258,16,244.71,Electronics,0,124\nCUST0259,6,774.19,Clothing,3,280\nCUST0260,7,150.58,Books,1,74\nCUST0261,12,352.21,Electronics,0,166\nCUST0262,9,429.63,Beauty,4,22\nCUST0263,9,570.81,Books,1,154\nCUST0264,9,231.1,Groceries,2,295\nCUST0265,10,212.6,Sports,5,219\nCUST0266,12,208.66,Books,1,157\nCUST0267,9,328.1,Sports,5,230\nCUST0268,15,664.78,Books,1,20\nCUST0269,11,201.09,Groceries,2,41\nCUST0270,6,13.09,Electronics,0,148\nCUST0271,11,463.24,Groceries,2,108\nCUST0272,6,263.2,Electronics,0,84\nCUST0273,7,363.81,Electronics,0,322\nCUST0274,8,53.07,Sports,5,309\nCUST0275,6,160.91,Beauty,4,290\nCUST0276,13,437.51,Groceries,2,323\nCUST0277,7,77.28,Books,1,134\nCUST0278,12,351.64,Groceries,2,207\nCUST0279,12,243.16,Sports,5,283\nCUST0280,7,133.02,Electronics,0,266\nCUST0281,7,123.63,Sports,5,73\nCUST0282,11,100.37,Clothing,3,352\nCUST0283,6,262.14,Clothing,3,48\nCUST0284,10,285.75,Books,1,326\nCUST0285,16,185.45,Sports,5,233\nCUST0286,12,94.55,Books,1,100\nCUST0287,11,344.43,Books,1,59\nCUST0288,9,469.08,Clothing,3,258\nCUST0289,9,390.09,Books,1,65\nCUST0290,6,897.58,Clothing,3,83\nCUST0291,14,216.23,Electronics,0,154\nCUST0292,11,621.94,Sports,5,266\nCUST0293,3,144.61,Books,1,309\nCUST0294,13,124.98,Clothing,3,79\nCUST0295,8,274.52,Groceries,2,315\nCUST0296,8,715.05,Books,1,150\nCUST0297,12,197.64,Beauty,4,48\nCUST0298,7,53.03,Electronics,0,248\nCUST0299,6,462.97,Electronics,0,278\nCUST0300,10,235.23,Groceries,2,356\nCUST0301,15,312.43,Clothing,3,98\nCUST0302,11,130.85,Books,1,25\nCUST0303,6,272.58,Clothing,3,284\nCUST0304,10,62.11,Electronics,0,301\nCUST0305,7,816.51,Clothing,3,68\nCUST0306,11,522.9,Electronics,0,7\nCUST0307,13,263.37,Clothing,3,305\nCUST0308,10,454.17,Groceries,2,137\nCUST0309,9,144.94,Sports,5,164\nCUST0310,6,507.19,Groceries,2,83\nCUST0311,9,190.61,Groceries,2,138\nCUST0312,11,179.7,Sports,5,73\nCUST0313,12,106.9,Sports,5,237\nCUST0314,7,341.33,Books,1,46\nCUST0315,13,254.72,Books,1,106\nCUST0316,11,635.31,Groceries,2,288\nCUST0317,5,95.54,Groceries,2,262\nCUST0318,14,342.45,Electronics,0,176\nCUST0319,12,557.63,Electronics,0,166\nCUST0320,8,289.56,Books,1,145\nCUST0321,7,187.66,Beauty,4,330\nCUST0322,7,284.06,Beauty,4,283\nCUST0323,9,601.8,Books,1,54\nCUST0324,13,601.63,Electronics,0,178\nCUST0325,7,227.83,Electronics,0,244\nCUST0326,11,594.66,Beauty,4,341\nCUST0327,11,245.6,Clothing,3,127\nCUST0328,10,450.67,Clothing,3,271\nCUST0329,13,371.52,Electronics,0,132\nCUST0330,14,181.55,Clothing,3,93\nCUST0331,9,110.54,Sports,5,73\nCUST0332,8,567.54,Books,1,248\nCUST0333,11,675.47,Books,1,348\nCUST0334,6,336.62,Electronics,0,273\nCUST0335,5,245.34,Groceries,2,43\nCUST0336,8,84.13,Beauty,4,41\nCUST0337,11,557.73,Electronics,0,170\nCUST0338,7,308.97,Clothing,3,212\nCUST0339,14,203.14,Beauty,4,168\nCUST0340,11,459.53,Groceries,2,39\nCUST0341,9,69.44,Clothing,3,245\nCUST0342,10,102.01,Sports,5,151\nCUST0343,5,140.38,Clothing,3,111\nCUST0344,7,363.31,Sports,5,47\nCUST0345,8,286.41,Beauty,4,63\nCUST0346,12,394.16,Sports,5,225\nCUST0347,11,532.34,Beauty,4,69\nCUST0348,12,404.17,Beauty,4,299\nCUST0349,11,827.9,Beauty,4,290\nCUST0350,10,531.51,Beauty,4,296\nCUST0351,8,227.41,Beauty,4,203\nCUST0352,5,160.0,Clothing,3,61\nCUST0353,12,232.87,Beauty,4,318\nCUST0354,12,414.09,Clothing,3,314\nCUST0355,13,174.8,Beauty,4,161\nCUST0356,8,422.1,Sports,5,331\nCUST0357,9,389.1,Beauty,4,16\nCUST0358,15,109.08,Groceries,2,338\nCUST0359,17,524.78,Beauty,4,94\nCUST0360,7,328.08,Beauty,4,304\nCUST0361,14,801.64,Sports,5,138\nCUST0362,13,246.26,Books,1,338\nCUST0363,7,195.77,Sports,5,38\nCUST0364,16,96.43,Groceries,2,127\nCUST0365,7,94.99,Books,1,275\nCUST0366,15,482.87,Electronics,0,164\nCUST0367,12,749.11,Electronics,0,319\nCUST0368,16,230.31,Groceries,2,77\nCUST0369,8,218.71,Sports,5,174\nCUST0370,7,263.81,Clothing,3,358\nCUST0371,8,549.24,Groceries,2,321\nCUST0372,4,109.99,Books,1,91\nCUST0373,10,299.06,Books,1,238\nCUST0374,8,490.39,Beauty,4,264\nCUST0375,14,360.13,Electronics,0,179\nCUST0376,7,6.89,Books,1,209\nCUST0377,14,405.59,Groceries,2,73\nCUST0378,14,362.64,Books,1,107\nCUST0379,16,621.51,Groceries,2,345\nCUST0380,13,710.22,Clothing,3,295\nCUST0381,10,600.87,Beauty,4,284\nCUST0382,13,264.89,Electronics,0,353\nCUST0383,9,50.4,Books,1,182\nCUST0384,7,217.46,Groceries,2,37\nCUST0385,8,258.54,Sports,5,137\nCUST0386,8,742.86,Electronics,0,338\nCUST0387,2,132.02,Clothing,3,56\nCUST0388,9,71.6,Groceries,2,187\nCUST0389,13,175.74,Beauty,4,341\nCUST0390,9,138.46,Beauty,4,258\nCUST0391,17,64.59,Clothing,3,58\nCUST0392,11,234.25,Clothing,3,363\nCUST0393,16,266.31,Beauty,4,123\nCUST0394,11,60.64,Books,1,188\nCUST0395,7,194.78,Books,1,230\nCUST0396,7,130.8,Groceries,2,168\nCUST0397,13,272.94,Sports,5,114\nCUST0398,9,293.6,Groceries,2,252\nCUST0399,12,130.82,Sports,5,107\nCUST0400,13,521.62,Clothing,3,37\nCUST0401,7,254.15,Electronics,0,335\nCUST0402,11,136.38,Groceries,2,92\nCUST0403,8,56.51,Groceries,2,18\nCUST0404,11,305.38,Sports,5,354\nCUST0405,5,362.02,Clothing,3,63\nCUST0406,9,167.64,Clothing,3,150\nCUST0407,12,279.52,Sports,5,139\nCUST0408,5,710.2,Clothing,3,186\nCUST0409,12,466.99,Beauty,4,185\nCUST0410,14,21.94,Books,1,205\nCUST0411,10,135.0,Beauty,4,260\nCUST0412,13,225.43,Electronics,0,214\nCUST0413,12,265.18,Groceries,2,256\nCUST0414,8,284.1,Electronics,0,135\nCUST0415,13,345.72,Groceries,2,61\nCUST0416,12,231.39,Books,1,363\nCUST0417,11,253.67,Clothing,3,310\nCUST0418,14,483.72,Beauty,4,88\nCUST0419,13,309.83,Sports,5,324\nCUST0420,8,87.49,Beauty,4,207\nCUST0421,14,271.62,Books,1,129\nCUST0422,11,225.93,Electronics,0,311\nCUST0423,11,33.97,Sports,5,3\nCUST0424,13,282.25,Clothing,3,242\nCUST0425,13,99.13,Books,1,121\nCUST0426,18,488.65,Sports,5,102\nCUST0427,12,342.19,Books,1,38\nCUST0428,8,82.77,Books,1,341\nCUST0429,4,473.58,Clothing,3,133\nCUST0430,8,628.22,Groceries,2,202\nCUST0431,12,204.64,Sports,5,348\nCUST0432,13,224.88,Clothing,3,21\nCUST0433,10,442.18,Books,1,242\nCUST0434,12,597.2,Clothing,3,109\nCUST0435,9,46.48,Groceries,2,303\nCUST0436,12,92.66,Beauty,4,84\nCUST0437,5,178.59,Sports,5,83\nCUST0438,11,194.97,Groceries,2,291\nCUST0439,17,433.41,Electronics,0,69\nCUST0440,9,599.27,Sports,5,129\nCUST0441,9,629.37,Groceries,2,196\nCUST0442,15,45.17,Books,1,140\nCUST0443,7,124.16,Sports,5,283\nCUST0444,11,151.93,Sports,5,312\nCUST0445,14,123.71,Clothing,3,234\nCUST0446,19,341.44,Books,1,23\nCUST0447,13,371.41,Electronics,0,153\nCUST0448,6,251.25,Beauty,4,277\nCUST0449,15,233.28,Groceries,2,61\nCUST0450,13,184.98,Clothing,3,319\nCUST0451,5,203.16,Groceries,2,52\nCUST0452,12,704.94,Electronics,0,344\nCUST0453,7,410.71,Electronics,0,153\nCUST0454,4,190.77,Sports,5,237\nCUST0455,8,229.79,Electronics,0,311\nCUST0456,8,347.11,Groceries,2,302\nCUST0457,9,82.75,Books,1,32\nCUST0458,11,278.72,Books,1,55\nCUST0459,13,395.03,Sports,5,352\nCUST0460,10,360.07,Beauty,4,36\nCUST0461,6,126.37,Groceries,2,110\nCUST0462,11,148.02,Groceries,2,177\nCUST0463,11,29.22,Electronics,0,362\nCUST0464,8,424.6,Groceries,2,314\nCUST0465,5,905.13,Clothing,3,295\nCUST0466,9,110.88,Beauty,4,336\nCUST0467,11,529.55,Electronics,0,97\nCUST0468,13,853.31,Clothing,3,213\nCUST0469,6,170.29,Sports,5,317\nCUST0470,11,230.04,Books,1,137\nCUST0471,8,302.43,Sports,5,6\nCUST0472,10,351.95,Books,1,109\nCUST0473,9,314.52,Sports,5,35\nCUST0474,10,181.57,Groceries,2,39\nCUST0475,5,390.72,Clothing,3,150\nCUST0476,7,185.04,Books,1,118\nCUST0477,14,330.37,Electronics,0,261\nCUST0478,7,244.38,Clothing,3,87\nCUST0479,11,39.85,Electronics,0,76\nCUST0480,10,582.64,Clothing,3,313\nCUST0481,7,151.48,Clothing,3,214\nCUST0482,4,621.79,Sports,5,285\nCUST0483,7,515.34,Books,1,239\nCUST0484,12,295.77,Books,1,165\nCUST0485,8,365.1,Clothing,3,87\nCUST0486,14,396.92,Groceries,2,141\nCUST0487,9,213.7,Groceries,2,160\nCUST0488,10,221.84,Electronics,0,46\nCUST0489,15,383.46,Electronics,0,112\nCUST0490,8,246.39,Sports,5,45\nCUST0491,15,182.06,Clothing,3,247\nCUST0492,11,128.21,Electronics,0,104\nCUST0493,12,337.4,Electronics,0,85\nCUST0494,6,147.22,Beauty,4,134\nCUST0495,20,456.95,Clothing,3,108\nCUST0496,14,483.72,Sports,5,18\nCUST0497,9,363.1,Electronics,0,94\nCUST0498,9,418.34,Sports,5,150\nCUST0499,6,363.87,Books,1,246\nCUST0500,19,439.24,Sports,5,289\n"};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!-- Setting up the HTML structure with necessary CDNs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Segmentation Report</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.8.1/prop-types.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+  <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chrono-node/1.3.11/chrono.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.15.0/Recharts.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div id="root"></div>
+
+  <!-- Writing the React application with JSX -->
+  <script type="text/babel">
+    // Defining the K-means clustering algorithm
+    const kMeansClustering = (data, k, maxIterations = 100) => {
+      // Normalizing data (Frequency, MonetaryValue, Recency)
+      const normalize = (arr) => {
+        const min = Math.min(...arr);
+        const max = Math.max(...arr);
+        return arr.map(x => (max - min) ? (x - min) / (max - min) : 0);
+      };
+      const frequencies = data.map(row => parseFloat(row["Frequency"]) || 0);
+      const monetaryValues = data.map(row => parseFloat(row["MonetaryValue"]) || 0);
+      const recencies = data.map(row => parseFloat(row["Recency"]) || 0);
+      const normalizedData = data.map((row, i) => ({
+        Frequency: normalize(frequencies)[i],
+        MonetaryValue: normalize(monetaryValues)[i],
+        Recency: normalize(recencies)[i],
+        CustomerID: row["CustomerID"],
+        ProductCategory: row["ProductCategory"]
+      }));
+
+      // Initializing centroids randomly
+      const centroids = [];
+      for (let i = 0; i < k; i++) {
+        const randomIdx = Math.floor(Math.random() * normalizedData.length);
+        centroids.push({
+          Frequency: normalizedData[randomIdx].Frequency,
+          MonetaryValue: normalizedData[randomIdx].MonetaryValue,
+          Recency: normalizedData[randomIdx].Recency
+        });
+      }
+
+      let clusters = Array(data.length).fill(0);
+      for (let iter = 0; iter < maxIterations; iter++) {
+        // Assigning points to nearest centroid
+        const newClusters = normalizedData.map(point => {
+          let minDist = Infinity;
+          let clusterIdx = 0;
+          centroids.forEach((centroid, idx) => {
+            const dist = Math.sqrt(
+              (point.Frequency - centroid.Frequency) ** 2 +
+              (point.MonetaryValue - centroid.MonetaryValue) ** 2 +
+              (point.Recency - centroid.Recency) ** 2
+            );
+            if (dist < minDist) {
+              minDist = dist;
+              clusterIdx = idx;
+            }
+          });
+          return clusterIdx;
+        });
+
+        // Checking for convergence
+        if (clusters.every((c, i) => c === newClusters[i])) break;
+        clusters = newClusters;
+
+        // Updating centroids
+        centroids.forEach((centroid, idx) => {
+          const points = normalizedData.filter((_, i) => clusters[i] === idx);
+          if (points.length > 0) {
+            centroid.Frequency = points.reduce((sum, p) => sum + p.Frequency, 0) / points.length;
+            centroid.MonetaryValue = points.reduce((sum, p) => sum + p.MonetaryValue, 0) / points.length;
+            centroid.Recency = points.reduce((sum, p) => sum + p.Recency, 0) / points.length;
+          }
+        });
+      }
+
+      return data.map((row, i) => ({
+        ...row,
+        Cluster: clusters[i]
+      }));
+    };
+
+    // Defining the React component for the report
+    const CustomerSegmentationReport = () => {
+      const [data, setData] = React.useState(null);
+      const [loading, setLoading] = React.useState(true);
+
+      // Loading and parsing the CSV data
+      React.useEffect(() => {
+        Papa.parse(loadFileData("customer_segmentation_dataset.csv"), {
+          header: true,
+          skipEmptyLines: true,
+          dynamicTyping: false,
+          transformHeader: header => header.trim().replace(/^"|"$/g, ''),
+          transform: (value, header) => {
+            let cleaned = value.trim().replace(/^"|"$/g, '');
+            if (["Frequency", "MonetaryValue", "Recency"].includes(header)) {
+              return parseFloat(cleaned) || 0;
+            }
+            return cleaned;
+          },
+          complete: (results) => {
+            const clusteredData = kMeansClustering(results.data, 4);
+            const cleanedData = clusteredData.map(row => ({
+              CustomerID: row["CustomerID"] || "",
+              Frequency: row["Frequency"] || 0,
+              MonetaryValue: row["MonetaryValue"] || 0,
+              Recency: row["Recency"] || 0,
+              ProductCategory: row["ProductCategory"] || "",
+              Cluster: row["Cluster"]
+            }));
+            setData(cleanedData);
+            setLoading(false);
+          },
+          error: (err) => {
+            console.error(err);
+            setLoading(false);
+          }
+        });
+      }, []);
+
+      // Rendering loading state
+      if (loading || !data) {
+        return <div className="text-center text-2xl mt-10">Loading...</div>;
+      }
+
+      // Calculating category distribution per cluster
+      const categoryDistribution = data.reduce((acc, row) => {
+        const cluster = row.Cluster;
+        const category = row.ProductCategory;
+        if (!acc[cluster]) acc[cluster] = {};
+        acc[cluster][category] = (acc[cluster][category] || 0) + 1;
+        return acc;
+      }, {});
+
+      // Preparing data for category bar chart
+      const categories = [...new Set(data.map(row => row.ProductCategory))];
+      const barData = Object.keys(categoryDistribution).map(cluster => ({
+        cluster: `Cluster ${cluster}`,
+        ...categories.reduce((acc, cat) => {
+          acc[cat] = categoryDistribution[cluster][cat] || 0;
+          return acc;
+        }, {})
+      }));
+
+      // Finding an interesting fact
+      const highValueSports = data.filter(row => 
+        row.ProductCategory === "Sports" && 
+        row.Frequency > 15 && 
+        row.MonetaryValue > 500
+      ).length;
+
+      // Rendering the report
+      return (
+        <div className="container mx-auto p-6">
+          <h1 className="text-3xl font-bold text-center mb-6">Customer Segmentation Report</h1>
+
+          {/* Summarizing the analysis */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Summary</h2>
+            <p className="text-gray-700">
+              This report analyzes customer purchasing behavior using K-means clustering on Frequency, Monetary Value, and Recency. Customers are grouped into four segments, revealing distinct patterns in spending and shopping habits across product categories (Electronics, Books, Groceries, Clothing, Beauty, Sports).
+            </p>
+            <p className="text-gray-700 mt-2">
+              <strong>Interesting Fact:</strong> {highValueSports} customers in the Sports category are high-frequency buyers (more than 15 purchases) with high spending (over $500), indicating a niche group of loyal, high-value sports enthusiasts.
+            </p>
+          </section>
+
+          {/* Visualizing clusters with scatter plot */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Cluster Distribution (Frequency vs Monetary Value)</h2>
+            <Recharts.ResponsiveContainer width="100%" height={400}>
+              <Recharts.ScatterChart>
+                <Recharts.CartesianGrid strokeDasharray="3 3" />
+                <Recharts.XAxis dataKey="Frequency" name="Frequency" unit=" purchases" />
+                <Recharts.YAxis dataKey="MonetaryValue" name="Monetary Value" unit=" $" />
+                <Recharts.Tooltip />
+                <Recharts.Legend />
+                {[...new Set(data.map(row => row.Cluster))].map(cluster => (
+                  <Recharts.Scatter
+                    key={cluster}
+                    name={`Cluster ${cluster}`}
+                    data={data.filter(row => row.Cluster === cluster)}
+                    fill={["#8884d8", "#82ca9d", "#ffc658", "#ff7300"][cluster]}
+                  />
+                ))}
+              </Recharts.ScatterChart>
+            </Recharts.ResponsiveContainer>
+          </section>
+
+          {/* Visualizing category distribution per cluster */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Category Distribution by Cluster</h2>
+            <Recharts.ResponsiveContainer width="100%" height={400}>
+              <Recharts.BarChart data={barData}>
+                <Recharts.CartesianGrid strokeDasharray="3 3" />
+                <Recharts.XAxis dataKey="cluster" />
+                <Recharts.YAxis />
+                <Recharts.Tooltip />
+                <Recharts.Legend />
+                {categories.map((cat, idx) => (
+                  <Recharts.Bar
+                    key={cat}
+                    dataKey={cat}
+                    stackId="a"
+                    fill={["#8884d8", "#82ca9d", "#ffc658", "#ff7300", "#ff4d4f", "#00c4b4"][idx]}
+                  />
+                ))}
+              </Recharts.BarChart>
+            </Recharts.ResponsiveContainer>
+          </section>
+
+          {/* Displaying summary table */}
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">Cluster Summary Table</h2>
+            <table className="w-full border-collapse bg-white shadow-md rounded">
+              <thead>
+                <tr className="bg-gray-200">
+                  <th className="border p-2">Cluster</th>
+                  <th className="border p-2">Avg Frequency</th>
+                  <th className="border p-2">Avg Monetary Value ($)</th>
+                  <th className="border p-2">Avg Recency (days)</th>
+                  <th className="border p-2">Customer Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[...new Set(data.map(row => row.Cluster))].map(cluster => {
+                  const clusterData = data.filter(row => row.Cluster === cluster);
+                  const avgFreq = (clusterData.reduce((sum, row) => sum + row.Frequency, 0) / clusterData.length).toFixed(2);
+                  const avgMonetary = (clusterData.reduce((sum, row) => sum + row.MonetaryValue, 0) / clusterData.length).toFixed(2);
+                  const avgRecency = (clusterData.reduce((sum, row) => sum + row.Recency, 0) / clusterData.length).toFixed(2);
+                  return (
+                    <tr key={cluster}>
+                      <td className="border p-2">Cluster {cluster}</td>
+                      <td className="border p-2">{avgFreq}</td>
+                      <td className="border p-2">{avgMonetary}</td>
+                      <td className="border p-2">{avgRecency}</td>
+                      <td className="border p-2">{clusterData.length}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </section>
+
+          {/* Concluding the analysis */}
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">Conclusion</h2>
+            <p className="text-gray-700">
+              The K-means clustering revealed four distinct customer segments based on purchasing behavior. High-frequency, high-value customers (especially in Sports) represent a key target for loyalty programs, while low-frequency, low-value customers may benefit from targeted promotions. The category distribution highlights preferences within clusters, aiding in personalized marketing strategies.
+            </p>
+          </section>
+        </div>
+      );
+    };
+
+    // Rendering the React component
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<CustomerSegmentationReport />);
+  </script>
+</body>
+</html>
